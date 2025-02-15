@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Secret</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+        body {
+            background-color: black;
+            color: #00ff00;
+            font-family: 'Press Start 2P', cursive;
+            text-align: center;
+            padding: 50px;
+        }
+        .glitch {
+            position: relative;
+            display: inline-block;
+            font-size: 20px;
+            text-shadow: 2px 2px red, -2px -2px blue;
+            animation: glitch 0.5s infinite alternate;
+        }
+        @keyframes glitch {
+            0% { transform: skewX(0deg); }
+            20% { transform: skewX(5deg); }
+            40% { transform: skewX(-5deg); }
+            60% { transform: skewX(5deg); }
+            80% { transform: skewX(-5deg); }
+            100% { transform: skewX(0deg); }
+        }
+        .flag {
+            margin-top: 20px;
+            padding: 10px;
+            border: 2px dashed #00ff00;
+            display: inline-block;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="glitch">⚠️ Access Denied ⚠️</h1>
+    <p>Admin files are secret... why are you here? 🤨</p>
+    <p>But since you made it this far, here's your prize:</p>
+    <div class="flag">noob{fuzz1ng_1s_b3st}</div>
+    <p>Now run before the sysadmin finds you! 🚀</p>
+</body>
+</html>
